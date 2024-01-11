@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.FragmentA">
+
+    <EditText
+        android:id="@+id/editTextforGetData"
+        android:layout_width="309dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="140dp"
+        android:hint="Enter data to send "
+        android:background="#45DDCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendBtn"
+        android:background="@drawable/gradient_btn"
+        android:text="Send Data"
+        android:textSize="26sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextforGetData"
+        app:layout_constraintStart_toStartOf="@+id/editTextforGetData"
+        app:layout_constraintTop_toBottomOf="@+id/editTextforGetData"
+        app:layout_constraintVertical_bias="0.137" />
+</androidx.constraintlayout.widget.ConstraintLayout>
